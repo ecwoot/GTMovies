@@ -3,8 +3,61 @@
   background-size: 100% auto;
 }
 
+h2 {
+  text-align: center;
+  margin: auto;
+  width: 25%;
+  border: 3px solid rgb(0, 0, 81);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 81);
+
+  font-size: 100px;
+  font-family: "Impact", fantasy;
+  font-variant: small-caps;
+  font-stretch: ultra-expanded;
+
+  color: #FFFEF6;
+  display: block;
+}
+
+.col {
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+  text-align: center;
+  font-size: x-large;
+}
+
+p.about {
+  color: #1900ff;
+  text-align: center;
+  font-size: large;
+}
+
+a.nav-link {
+  color: #996eff;
+  text-align: center;
+}
+
+b {
+  text-align: center;
+  margin: auto;
+  width: 25%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+  font-size: x-large;
+}
+
 .navbar a.nav-link {
-  color: #FFFEF6 !important;
+  color: #996eff !important;
+  text-align: center;
 }
 
 .bg-dark {
@@ -21,7 +74,7 @@
 }
 
 .ms-footer a:hover {
-  color: #6ab43e;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -31,7 +84,7 @@
 }
 
 .ms-footer-bottom a {
-  color: #6ab43e;
+  color: #996eff;
   text-decoration: none;
 }
 
