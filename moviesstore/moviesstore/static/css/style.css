@@ -1,103 +1,84 @@
-.bg-index{
-  background: url("/static/img/background.jpg") no-repeat fixed;
-  background-size: 100% auto;
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
 }
 
+.bg-index, .row {
+  background: url("/static/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Headers */
 h2 {
   text-align: center;
   margin: auto;
-  width: 25%;
   border: 3px solid rgb(0, 0, 81);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: rgb(0, 0, 81);
 
-  font-size: 100px;
+  font-size: 60px;
   font-family: "Impact", fantasy;
   font-variant: small-caps;
   font-stretch: ultra-expanded;
-
   color: #FFFEF6;
-  display: block;
+
+  display: inline-block;
 }
 
-.col {
-  text-align: center;
-}
-
+/* Text Styling */
 p {
   color: #ffffff;
-  text-align: center;
-  font-size: x-large;
 }
 
-p.about {
-  color: #1900ff;
+p.title {
   text-align: center;
-  font-size: large;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
-a.nav-link {
-  color: #996eff;
-  text-align: center;
-}
-
-b {
-  text-align: center;
-  margin: auto;
-  width: 25%;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-
-  color: white;
-  font-size: x-large;
-}
-
+/* Navigation */
 .navbar a.nav-link {
-  color: #996eff !important;
-  text-align: center;
+  color: #ffcc00 !important;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.bg-dark {
-  background-color: #2E2E2E !important;
+.navbar a.nav-link:hover {
+  color: #ffffff !important;
 }
 
+/* Footer */
 .ms-footer {
-  background-color: #202020;
+  background-color: #181818;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .ms-footer p {
-  color: #7F7F7F;
-  font-size: 13px;
+  color: #aaaaaa;
+  font-size: 14px;
 }
 
-.ms-footer a:hover {
+.ms-footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.ms-footer, a:hover {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.ms-footer-bottom span{
-  font-size: 13px;
-  line-height: 38px;
-}
-
-.ms-footer-bottom a {
-  color: #996eff;
-  text-decoration: none;
-}
-
-.ms-footer-bottom a:hover {
-  color: #fff;
-}
-
+/* Image Adjustments */
 .img-card-200 {
-  width: fit-content;
+  width: auto;
   max-height: 200px;
 }
 
 .img-card-400 {
-  width: fit-content;
+  width: auto;
   max-height: 400px;
 }

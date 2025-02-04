@@ -3,24 +3,30 @@
 <div class="p-3 mt-4">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card shadow p-3 mb-4 rounded">
+      <div class="col-md-6">
+        <div class="card shadow p-4 mb-4 rounded">
           <div class="card-body">
-            <h2>Sign Up</h2>
+            <h1 class="text-center">Sign Up</h1>
             <hr />
+
+            {% if template_data.error %}
+            <div class="alert alert-danger" role="alert">
+              {{ template_data.error }}
+            </div>
+            {% endif %}
+
             <form method="POST">
               {% csrf_token %}
               {{ template_data.form.as_p }}
-              <button type="submit"
-                class="btn bg-dark text-white">Sign Up
-              </button>
             </form>
+
             <div class="text-center mt-3">
-                <a href="{% url 'accounts.login' %}" 
-                  <button type="submit"
-                    class="btn bg-dark text-white">Log In
-                  </button>
-                </a>
+              <a href="{% url 'accounts.login' %}" 
+                button type="submit" class="btn btn-dark btn-block">Login</button>
+              </a>
+              <a href="{% url 'accounts.signup' %}" class="btn btn-outline-dark">Sign Up</a>
+            </div>
+
           </div>
         </div>
       </div>
