@@ -30,7 +30,11 @@ h2 {
 
 /* Text Styling */
 p {
-  color: #ffffff;
+  color: #000000;
+}
+
+p.about {
+  color: #ffffff
 }
 
 p.title {
@@ -69,7 +73,7 @@ p.title {
 
 .ms-footer, a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 /* Image Adjustments */
