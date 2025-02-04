@@ -30,7 +30,11 @@ h2 {
 
 /* Text Styling */
 p {
-  color: #000000;
+  color: #ffffff;
+}
+
+.signUpText p {
+  color: black;
 }
 
 p.about {
