@@ -20,6 +20,7 @@ def edit_review(request, id, review_id):
         return redirect('movies.show', id=id)
     else:
         return redirect('movies.show', id=id)
+    
 def index(request):
     search_term = request.GET.get('search')
     if search_term:
@@ -53,6 +54,7 @@ def create_review(request, id):
         return redirect('movies.show', id=id)
     else:
         return redirect('movies.show', id=id)
+    
 @login_required
 def delete_review(request, id, review_id):
     review = get_object_or_404(Review, id=review_id,
