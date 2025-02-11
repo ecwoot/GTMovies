@@ -5,10 +5,10 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
+        <br>
         <div class="card shadow p-4 mb-4 rounded">
           <div class="card-body">
             <h1 class="text-center">Login</h1>
-            <hr />
 
             {% if template_data.error %}
             <div class="alert alert-danger" role="alert">
@@ -32,11 +32,13 @@
 
               <div class="d-grid">
                 <button type="submit" class="btn btn-dark btn-block">Login</button>
+                <br>
                 <a href="{% url 'accounts.password_reset' %}" class="btn btn-dark btn-block">Reset Password</a>
               </div>
             </form>
 
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 signUpText">
+              <br>
               <p>Don't have an account?</p>
               <a href="{% url 'accounts.signup' %}" class="btn btn-outline-dark">Sign Up</a>
             </div>
