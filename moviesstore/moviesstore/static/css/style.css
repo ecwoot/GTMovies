@@ -33,6 +33,10 @@ p {
   color: #000000;
 }
 
+.purchaseText p {
+  color: white;
+}
+
 p.about {
   color: #ffffff
 }
